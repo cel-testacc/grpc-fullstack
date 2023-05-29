@@ -4,11 +4,11 @@ This is fullstack app that contains a grpc server, a grpc client, and a separate
 ### Dependencies
 1. The client and server files run on Python and require installment of the following modules. You can use pip to install them.
 - grpcio
-- grpcio-tools=1.44.0
+- grpcio-tools=1.44.0 (*Note: The grpcio-tools version is fixed to 1.44.0 so as not to break compatibility with mysql-connector-python.*)
 - mysql-connector-python
 - flask
 - flask-cors
-(*Note: The grpcio-tools version is fixed to 1.44.0 so as not to break compatibility with mysql-connector-python.*)
+
 2. The database folder contains a prepopulated MySQL file that contains the data used in this project. You can set it up within your own machine/virtual environment.
 3. The database connections need to be set up in the server/bookdetails_server.py file. These need to be filled out with your own relevant environment variables.
 ```sh
